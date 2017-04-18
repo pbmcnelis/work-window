@@ -1,19 +1,11 @@
 <html>
-
-<!-- Set the background color of the page to be black to look better on the screen.-->
-<body bgcolor="black">
-
-<!-- Create a frame to hold the image. This allows for it to be resized to fit the screen and also allows
-the picture to be refreshed.-->
-
-<div id="theframe" style="max-width:800px;" style="max-height:480px;">
+<body style="background-color:black;">
+<div id="theframe" style="max-width:800px;" style="max-height:480px;" style="bordercolor: black">
 	
 	<img id="pic" src="http://weather-webcams.nmsu.edu/skh/image.jpg" style="width:780px;height:460px;">
 	
 </div>
 </body>
-
-<!-- JavaScript to refresh the page every 20 seconds.-->
 <script type="text/javascript">
 var reimg
 window.onload=function () {
@@ -22,7 +14,11 @@ window.onload=function () {
     reimg.src=reimg.src.replace(/\?.*/,function () {
       return '?'+new Date()
     })
-  },30000)
+  },20000)
 }
 
 </script>
+
+
+
+</html>
